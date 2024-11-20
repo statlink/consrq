@@ -1,0 +1,9 @@
+#useDynLib(pchc, .registration = TRUE)
+
+importFrom("quantreg", rq)
+importFrom("Rfast", colmeans)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+export(int.crq, mpcrq, mprq, pcrq, prq)
